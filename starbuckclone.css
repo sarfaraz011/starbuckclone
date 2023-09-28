@@ -1,0 +1,415 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+
+}
+.navbar{
+    background-color: #fff;
+    display: flex;
+    height: 70px;
+    width: 100%;
+    font-size: 14px;
+    filter: drop-shadow(0px 1px 1px black);
+    position:sticky;
+    top: 0;
+
+
+}
+.nav1{
+    width: 60%;
+    display: flex;
+
+    padding-left: 8%;
+}
+.nav2{
+    width: 35%;
+}
+
+body::-webkit-scrollbar{
+    /* display: none; */
+}
+.menubar{
+    width: 50%;
+    height: 100%;
+
+}
+.nav-logo{
+    display: grid;
+    place-items: center;
+}
+.nav-logo img{
+    height: 50%;
+}
+.searchbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.searchbar div img  {
+    position: absolute;
+    right: 25%;
+    top: 42%;
+    z-index: 1;
+    width: 20px;
+    height: 20px;
+}
+
+
+.searchbar img{
+width: 36px;
+height: 36px;
+padding-right: 1px;
+
+}
+
+.menubar ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    height: 100%;
+    font-size: 16px;
+    padding-top: 16px;
+    
+}
+
+.menubar ul li a{
+    text-decoration: none;
+    color: #111;
+    font-weight: lighter;
+    transform: all;
+    
+}
+.menubar ul li a:active{
+
+
+    border-bottom: 2px solid green;
+}
+
+.searchbar input {
+    padding: 2%;
+    padding-left: 8%;
+    border-radius: 25px;
+    border: none;
+    filter: drop-shadow(0px 1px 1px black);
+    width: 50%;
+}
+
+.carD{
+    background-color: #1e3932;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.card1{
+    height: 100%;
+    width:32%;
+    display: flex;
+    font-size: 20px;
+    color: #fff;
+    align-items: center;
+    font-weight: 10;
+
+}
+.card2 {
+    height: 100%;
+    width: 32%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+
+
+.card2 button {
+    height: 40%;
+    width: 18%;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 25px;
+    font-size: 0.7em;
+    /* font-weight: bold; */
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+.dashboard{
+    width: 100%;
+    height: 30px;
+
+}
+
+
+.images{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    
+
+}
+
+
+
+.image1{
+    display: flex;
+    width: 108px;
+    height: 108px;
+    border-radius: 50%;
+    background-image: url("image1.jpg");
+    background-size: cover;
+    transition:all 0.5s ease-in-out
+}
+
+
+
+.image1:hover {
+    outline: 2px solid green;
+}
+.images .image1:nth-child(2){
+    background-image: url("image2.jpg");
+}
+.image1:nth-child(3){ 
+    background-image: url("image3.jpg"); 
+}
+.image1:nth-child(4){ 
+    background-image: url("image4.jpg"); 
+}
+.image1:nth-child(5){ 
+    background-image: url("image5.jpg"); 
+}
+.image1:nth-child(6){ 
+    background-image: url("image6.jpg"); 
+}
+
+
+.slideimage1{
+    width: 100px;
+}
+.slideimage2{
+    width: 100px;
+}
+.slideimage3{
+    width: 100px;
+}
+ 
+.orderimages{
+    width: 100%;
+    height: 420px;
+    display: flex;
+
+    justify-content: center;
+    gap: 2%;
+}
+
+
+.orderimage1{
+          width:27%;
+          height:90%;
+
+          border-radius: 15px;
+          overflow: hidden;
+          padding-bottom: 5%;
+          box-shadow: 0 2px 4px #00000012, 0 4px 5px #0000000f, 0 1px 10px #0000001a;
+}
+.orderimage1:nth-child(2) .ord1{
+    background: url('frappu.webp');
+    background-size: cover;
+}
+
+.orderimage1:nth-child(3) .ord1{
+    background: url('crumble.webp');
+    background-size: cover;
+}
+.ord1 {
+    width: 100%;
+    height: 45%;
+    background-image: url("mochacoffee.webp");
+    background-size: cover;
+
+
+}
+
+.ord2 {
+    width: 100%;
+    height: 55%;
+    padding-left: 5%;
+}
+
+.subord {
+    padding: 2%;
+}
+
+
+.subord button{
+    
+ 
+    font-size: 10px;
+    border-radius: 5px;
+    color: green;
+    font-weight: 600;
+    background-color: rgba(0, green,0, 1);
+    border: none;
+    width: 17%;
+}
+
+.ord2 h5 {
+    font-size: 14px;
+}
+
+.ord2 p {
+    font-size: 10px;
+    font-weight: lighter;
+}
+
+
+.rupees{
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 5% 0% 0;
+}
+
+.rupees button  {
+    color: white;
+    background-color:#00754a;
+    border: none;
+    border-radius: 25px;
+    width: 28%;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.recommendfood {
+    width: 100%;
+    height: 300px;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    align-items: center;
+    
+}
+
+.subcard1 {
+    width: 25%;
+    height: 50%;
+    border-radius: 2%;
+    background-color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subcard01 {
+    width: 90%;
+    height: 80%;
+    /* background-color: red; */
+    /* display: flex; */
+}
+.childSub1{
+    display: flex;
+}
+
+
+  .subcard01 img {
+    width:80px;
+    height: 80px;
+    object-fit: cover;
+    cursor: pointer;
+    box-shadow: 0 2px 4px #00000012, 0 4px 5px #0000000f, 0 1px 10px #0000001a;
+
+ } 
+
+ .subcardvegimg {
+    width: 100%;
+    height: 68%;
+    /* background-color:rgb(222, 223, 225); */
+    padding-left: 1%;
+    
+ }
+ .subcardvegimg img {
+    width: 16px;
+    height: 16px;
+    margin-left: 5px;
+    box-shadow: 0 2px 4px #00000012, 0 4px 5px #0000000f, 0 1px 10px #0000001a;
+   
+    cursor: pointer;
+}
+
+
+.subcard01rupees {
+    display: flex;
+    justify-content: space-between;
+    align-items:baseline;
+    margin: 2% 4%;
+}
+.subcard01rupees button {
+    color: white;
+    background-color: #008553;
+    border-radius: 15px;
+    border: none;
+    font-size: 12px;
+    width: 96px;
+    height: 32px;
+    font-weight: 600;
+    box-shadow: 0 4px 15px #a3a3a3ad;
+}
+ 
+
+
+
+
+
+/* footer starts here */
+footer{
+    width: 100%;
+    height: 520px;
+    display: flex;
+    background-color:#0e382c;
+}
+.foot1{
+    display: flex;
+    width: 16.6%;
+    height: 80%;
+    
+
+    
+}
+.foot1 div{
+    padding: 0.5in 0 0 1in;
+    
+}
+.foot1 img {
+    width: 62px;
+    height: 62px;
+  
+}
+
+    
+.foot2{
+    display: flex;
+    width: 13.6%;
+    height: 80%;
+
+    justify-content: space-around;
+    padding-top: 2%;
+}
+.foot2 ul li a {
+    text-decoration: none;
+    color: #fff;
+    line-height: 0.5in;
+    font-weight: lighter;
+}
+
+ 
